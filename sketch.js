@@ -27,7 +27,7 @@ function setup() {
 function draw() {
   strokeWeight(16);
   stroke(255);
-  if (mouseIsPressed && mouseY < height) {
+  if (mouseIsPressed && mouseY < height && mouseY > 0 && mouseX < width && mouseX > 0) {
     points.push(createVector(mouseX, mouseY));
   }
   beginShape();
